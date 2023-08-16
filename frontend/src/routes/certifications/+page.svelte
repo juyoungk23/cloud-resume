@@ -39,7 +39,7 @@ let certifications = [
 <h1 class="text-3xl text-center my-10">Certifications</h1>
 <div class="container mx-auto">
   {#each certifications as certification}
-    <div class="flex bg-white shadow-2xl rounded p-6 mb-4">
+    <div class="flex bg-white shadow-2xl rounded p-6 mb-4 mx-5">
       <img
         src={certification.image}
         alt={certification.name}
