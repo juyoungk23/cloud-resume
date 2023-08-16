@@ -14,6 +14,13 @@ let certifications = [
       "https://passyourcert.net/wp-content/uploads/2021/12/badge-gcp-professional-cloud-architect.png",
   },
   {
+    name: "Google Cloud Platform Digital Leader",
+    date: "2021-01-01",
+    link: "https://www.credential.net/0b1b1d1e-5b7a-4b7e-9b1a-5b8b1b1b1b1b",
+    image:
+      "https://blogs.sap.com/wp-content/uploads/2021/09/clouddigitalleader.png",
+  },
+  {
     name: "Microsoft AZ-900",
     date: "2021-01-01",
     link: "https://www.credential.net/0b1b1d1e-5b7a-4b7e-9b1a-5b8b1b1b1b1b",

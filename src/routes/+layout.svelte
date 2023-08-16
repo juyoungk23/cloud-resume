@@ -8,6 +8,7 @@ import "../app.css";
   <a href="/certifications">Certifications</a>
   <a href="/education">Education</a>
   <a href="/blog">Blog</a>
+  <a href="/about">About This Project</a>
 </nav>
 <div class="content-container">
   <slot />
