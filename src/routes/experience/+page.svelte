@@ -36,7 +36,7 @@ let personalProjects = [
     date: "August 2023",
     description:
       "Hosting a personal resume website on GCP using Cloud Storage, Cloud Run, and Cloud Build. (GCP, Cloud Storage, Cloud Run, Cloud Build)",
-    repo: "https://www.google.com",
+    repo: "https://github.com/juyoungk23/cloud-resume",
   },
   {
     title: "Augmented Reality Geolocated Forums (In Development)",
@@ -98,17 +98,22 @@ let personalProjects = [
 <h1 id="personal" class="text-4xl text-center my-20">Personal Projects</h1>
 <div class="container mx-auto">
   {#each personalProjects as project}
+    <!-- https://pngimg.com/uploads/github/github_PNG40.png -->
     <div class="bg-white shadow-sm rounded p-6 mb-20">
       <h5 class="text-2xl font-semibold">{project.title}</h5>
       <h6 class="text-xl text-gray-600 mb-2">{project.date}</h6>
       <p class="text-lg">{project.description}</p>
-      <a
-        href={project.repo}
-        class="text-blue-500 underline hover:text-blue-700"
-        target="_blank"
-      >
-        Repository Link
-      </a>
+      <div class="flex items-center">
+        <img src="/github-logo.svg" alt="GitHub Logo" class="w-8 h-8 m-2" />
+
+        <a
+          href={project.repo}
+          class="text-blue-500 underline hover:text-blue-700"
+          target="_blank"
+        >
+          Repository Link
+        </a>
+      </div>
     </div>
   {/each}
 </div>
