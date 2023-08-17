@@ -2,11 +2,35 @@ steps:
   - name: "gcr.io/cloud-builders/npm"
     args: ["install"]
     dir: "frontend"
+
+  # Uncomment the following if you want to run tests
   # - name: "gcr.io/cloud-builders/npm"
   #   args: ["test"]
   #   dir: 'frontend'
+
   - name: "gcr.io/cloud-builders/npm"
     args: ["run", "build"]
     dir: "frontend"
+
   - name: "gcr.io/cloud-builders/gsutil"
-    args: ["cp", "-r", "./frontend/build/*", "gs://www.juyoungkim.dev"] # Make sure this path matches the output directory
+    args:
+      [
+        "-h",
+        "Cache-Control:public, max-age=600",
+        "cp",
+        "-r",
+        "./frontend/build/*",
+        "gs://www.juyoungkim.dev",
+      ]
+
+  # Invalidate CDN cache
+  - name: "gcr.io/cloud-builders/gcloud"
+    args:
+      [
+        "compute",
+        "url-maps",
+        "invalidate-cdn-cache",
+        "load-balancer",
+        "--path",
+        "/*",
+      ]
