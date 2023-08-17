@@ -4,7 +4,7 @@ from google.cloud import firestore
 app = Flask(__name__)
 db = firestore.Client()
 
-@app.route('/api/visit', methods=['GET'])
+@app.route('/api/visitor-count', methods=['GET'])
 def visit():
     # Get the visitor count from Firestore
     doc_ref = db.collection('visitor_count').document('counter')
