@@ -9,6 +9,9 @@ WORKDIR /app
 # Install requirements
 RUN pip install -r requirements.txt
 
+# Set the PORT environment variable
+ENV PORT=8080
+
 # Copy the source code
 COPY . /app
 
