@@ -4,7 +4,7 @@ steps:
       [
         "build",
         "-t",
-        "us-west2-docker.pkg.dev/$PROJECT_ID/cloud-run-source-deploy/cloud-resume/cloud-resume-backend:$SHORT_SHA",
+        "us-west2-docker.pkg.dev/cloud-resume-396119/cloud-run-source-deploy/cloud-resume/cloud-resume-backend:${SHORT_SHA}",
         ".",
       ]
     dir: "backend"
@@ -13,19 +13,20 @@ steps:
     args:
       [
         "push",
-        "us-west2-docker.pkg.dev/$PROJECT_ID/cloud-run-source-deploy/cloud-resume/cloud-resume-backend:$SHORT_SHA",
+        "us-west2-docker.pkg.dev/cloud-resume-396119/cloud-run-source-deploy/cloud-resume/cloud-resume-backend:${SHORT_SHA}",
       ]
     dir: "backend"
 
   - name: "gcr.io/cloud-builders/gcloud"
-    args: [
+    args:
+      [
         "run",
         "deploy",
         "cloud-resume-backend",
         "--image",
-        "us-west2-docker.pkg.dev/$PROJECT_ID/cloud-run-source-deploy/cloud-resume/cloud-resume-backend:$SHORT_SHA",
+        "us-west2-docker.pkg.dev/cloud-resume-396119/cloud-run-source-deploy/cloud-resume/cloud-resume-backend:${SHORT_SHA}",
         "--region",
-        "us-west2", # You can update the region if necessary
+        "us-west2",
         "--platform",
         "managed",
       ]
