@@ -1,3 +1,4 @@
 Flask==1.1.2
 Jinja2==2.11.3
 google-cloud-firestore
+MarkupSafe==1.1.1
