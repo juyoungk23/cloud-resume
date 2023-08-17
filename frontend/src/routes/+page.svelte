@@ -3,15 +3,17 @@ import { onMount } from "svelte";
 
 let count = 0;
 
-// onMount(async () => {
-//   try {
-//     const response = await fetch("/api/visitor-count");
-//     const data = await response.json();
-//     count = data.count; // Adjust based on the actual response structure
-//   } catch (error) {
-//     console.error("Error fetching visitor count:", error);
-//   }
-// });
+onMount(async () => {
+  try {
+    const response = await fetch(
+      "https://cloud-resume-backend-j4vk2vgrha-wl.a.run.app/api/visitor-count",
+    );
+    const data = await response.json();
+    count = data.count; // Adjust based on the actual response structure
+  } catch (error) {
+    console.error("Error fetching visitor count:", error);
+  }
+});
 </script>
 
 <div class="my-20 text-center content-center">
