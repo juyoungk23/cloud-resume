@@ -1,9 +1,12 @@
 steps:
   - name: "gcr.io/cloud-builders/npm"
     args: ["install"]
+    dir: "frontend"
   # - name: "gcr.io/cloud-builders/npm"
   #   args: ["test"]
+  #   dir: 'frontend'
   - name: "gcr.io/cloud-builders/npm"
-    args: ["run", "build"] # Using "run build" to execute the "vite build" command defined in your package.json
+    args: ["run", "build"]
+    dir: "frontend"
   - name: "gcr.io/cloud-builders/gsutil"
-    args: ["cp", "-r", "./build/*", "gs://www.juyoungkim.dev"] # Assuming that the build output is in the "dist" directory
+    args: ["cp", "-r", "./frontend/build/*", "gs://www.juyoungkim.dev"] # Make sure this path matches the output directory
