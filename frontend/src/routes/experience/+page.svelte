@@ -69,7 +69,7 @@ let personalProjects = [
 ];
 </script>
 
-<nav class="mx-40 my-5">
+<nav class="mx-40 text-center my-3 shadow-container-links">
   <a href="#professional" class="text-lg text-blue-700"
     >Professional Experience</a
   >
@@ -130,15 +130,11 @@ let personalProjects = [
   border-radius: 24px; /* optional: rounded corners */
 }
 
-.header-box {
+.shadow-container-links {
+  background: #ffffff;
+  padding: 10px;
+  box-shadow: 60px 40px 64px rgba(0, 0, 0, 0.1); /* shadow effect */
+  border-radius: 24px; /* optional: rounded corners */
   max-width: 400px;
-  margin: auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-  background-color: white;
-  border-radius: 20px;
 }
 </style>

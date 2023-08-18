@@ -1,14 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 @keyframes gradient-background {
   0%,
   100% {
-    background-position: 0% 50%;
+    background-position: 0% 0%;
   }
   50% {
-    background-position: 100% 50%;
+    background-position: 100% 0%;
   }
 }
 
@@ -17,12 +16,12 @@ body {
   background: linear-gradient(
     90deg,
     #f0f8ff,
-    #add8e6,
+    #a0d8f6,
+    #a0d8f6,
     #f0f8ff,
-    #f0f8ff,
-    #add8e6
+    #f0f8ff
   );
   background-size: 200% 100%;
-  animation: gradient-background 40s ease infinite;
+  animation: gradient-background 40s linear infinite;
   color: #333;
 }

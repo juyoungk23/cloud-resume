@@ -4,12 +4,12 @@ import "../app.css";
 
 <nav class="nav bg-wells-fargo-red">
   <div class="nav-links">
-    <a href="/">Home</a>
-    <a href="/experience">Experience</a>
-    <a href="/certifications">Certifications</a>
-    <a href="/education">Education</a>
-    <a href="/blog">Blog</a>
-    <a href="/about">About This Project</a>
+    <a href="#/">Home</a>
+    <a href="#/experience">Experience</a>
+    <a href="#/certifications">Certifications</a>
+    <a href="#/education">Education</a>
+    <a href="#/blog">Blog</a>
+    <a href="#/about">About This Project</a>
   </div>
 </nav>
 <div class="content-container">
