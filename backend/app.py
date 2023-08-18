@@ -1,7 +1,9 @@
 from flask import Flask, jsonify
+from flask_cors import CORS
 from google.cloud import firestore
 
 app = Flask(__name__)
+CORS(app, resources={r"/api/*": {"origins": "*"}})
 db = firestore.Client()
 
 @app.route('/api/visitor-count', methods=['GET'])
@@ -24,3 +26,5 @@ def visit():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080)
+
+# test comment
