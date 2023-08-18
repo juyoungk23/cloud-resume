@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@keyframes gradient-background {
+  0%,
+  100% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(90deg, #e8f7f6, #b2e1f4, #89dae8, #27c4c7);
+  background-size: 200% 100%;
+  animation: gradient-background 40s linear infinite;
+  color: #333;
+}

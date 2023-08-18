@@ -69,24 +69,30 @@ let personalProjects = [
 ];
 </script>
 
-<nav class="m-5">
-  <a href="#professional" class="text-lg text-blue-700"
+<nav class="text-center my-3 shadow-container-links">
+  <a href="#professional" class="text-md sm:text-lg text-blue-700"
     >Professional Experience</a
   >
   |
-  <a href="#personal" class="text-lg text-blue-700">Personal Projects</a>
+  <a href="#personal" class="text-md sm:text-lg text-blue-700"
+    >Personal Projects</a
+  >
 </nav>
 
-<h1 id="professional" class="text-4xl text-center my-20">
+<h1 id="professional" class="text-3xl sm:text-4xl text-center my-10">
   Professional Experience
 </h1>
-<div class="container mx-auto">
-  {#each professionalExperiences as experience}
-    <div class="bg-white shadow-sm rounded p-6 mb-20">
-      <h5 class="text-2xl font-semibold">{experience.title}</h5>
-      <h6 class="text-xl text-gray-600">{experience.date}</h6>
-      <h6 class="text-lg font-medium">{experience.company}</h6>
-      <ul class="list-inside list-disc mt-2 text-lg">
+<div class="container mx-auto shadow-container">
+  {#each professionalExperiences as experience, index}
+    <div
+      class="p-4 sm:p-6 {index !== professionalExperiences.length - 1
+        ? 'border-b'
+        : ''}"
+    >
+      <h5 class="text-xl sm:text-2xl font-bold">{experience.title}</h5>
+      <h6 class="text-lg sm:text-xl text-gray-600">{experience.date}</h6>
+      <h6 class="text-md sm:text-lg font-medium">{experience.company}</h6>
+      <ul class="list-inside list-disc mt-2 text-md sm:text-lg">
         {#each experience.responsibilities as responsibility}
           <li>{responsibility}</li>
         {/each}
@@ -94,18 +100,25 @@ let personalProjects = [
     </div>
   {/each}
 </div>
-
-<h1 id="personal" class="text-4xl text-center my-20">Personal Projects</h1>
-<div class="container mx-auto">
-  {#each personalProjects as project}
-    <!-- https://pngimg.com/uploads/github/github_PNG40.png -->
-    <div class="bg-white shadow-sm rounded p-6 mb-20">
-      <h5 class="text-2xl font-semibold">{project.title}</h5>
-      <h6 class="text-xl text-gray-600 mb-2">{project.date}</h6>
-      <p class="text-lg">{project.description}</p>
+<h1 id="personal" class="text-3xl sm:text-4xl text-center my-10">
+  Personal Projects
+</h1>
+<div class="container mx-auto shadow-container">
+  {#each personalProjects as project, index}
+    <div
+      class="p-4 sm:p-6 {index !== personalProjects.length - 1
+        ? 'border-b'
+        : ''}"
+    >
+      <h5 class="text-xl sm:text-2xl font-bold">{project.title}</h5>
+      <h6 class="text-lg sm:text-xl text-gray-600 mb-2">{project.date}</h6>
+      <p class="text-md sm:text-lg">{project.description}</p>
       <div class="flex items-center">
-        <img src="/github-logo.svg" alt="GitHub Logo" class="w-8 h-8 m-2" />
-
+        <img
+          src="/github-logo.svg"
+          alt="GitHub Logo"
+          class="w-6 sm:w-8 h-6 sm:h-8 m-1 sm:m-2"
+        />
         <a
           href={project.repo}
           class="text-blue-500 underline hover:text-blue-700"
@@ -117,3 +130,41 @@ let personalProjects = [
     </div>
   {/each}
 </div>
+
+<style>
+.shadow-container,
+.shadow-container-links {
+  background: #ffffff;
+  box-shadow: 60px 40px 64px rgba(0, 0, 0, 0.1); /* shadow effect */
+  border-radius: 24px; /* rounded corners */
+  max-width: 90%; /* adjust for mobile */
+  margin: auto; /* centers the container */
+}
+
+.shadow-container {
+  padding: 15px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.shadow-container-links {
+  padding: 5px;
+  margin-top: 10px; /* additional top margin for mobile */
+}
+
+/* Styles for screens larger than 768px */
+@media (min-width: 768px) {
+  .shadow-container,
+  .shadow-container-links {
+    padding: 10px;
+    max-width: 800px; /* adjust as needed for desktop */
+  }
+  .shadow-container-links {
+    margin-left: 25%; /* more left margin for desktop */
+    margin-right: 25%; /* more right margin for desktop */
+  }
+  .shadow-container {
+    margin-top: 40px; /* larger top margin for bigger screens */
+  }
+}
+</style>
