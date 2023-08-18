@@ -42,4 +42,25 @@ let education = [
   box-shadow: 60px 40px 64px rgba(0, 0, 0, 0.1); /* shadow effect */
   border-radius: 24px; /* optional: rounded corners */
 }
+
+.card {
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .shadow-container {
+    max-width: 90%; /* take up 90% of the screen width */
+    margin-top: 40px; /* reduce top margin */
+    padding: 15px;
+  }
+
+  .card .flex {
+    flex-direction: column; /* stack content vertically */
+    align-items: center; /* center items */
+  }
+
+  .card img {
+    margin: 15px 0; /* adjust margin for vertical layout */
+  }
+}
 </style>

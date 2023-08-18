@@ -16,7 +16,7 @@ onMount(async () => {
 });
 </script>
 
-<div class="mt-20">
+<div class="mt-20 container">
   <!-- Name and Visitor Count Box -->
   <div class="shadow-box my-20 text-center content-center">
     <h1 class="text-5xl my-3">Juyoung Kim</h1>
@@ -25,7 +25,7 @@ onMount(async () => {
 
   <!-- Social Links Boxes -->
   <div
-    class="shadow-box flex flex-col md:flex-row justify-center items-center space-y-3 md:space-y-0 md:space-x-3"
+    class="shadow-box flex flex-row justify-center items-center space-y-0 space-x-3"
   >
     <a
       href="https://www.linkedin.com/in/juyoung-kim-2023/"
@@ -71,6 +71,13 @@ onMount(async () => {
 </div>
 
 <style>
+.container {
+  width: 100%;
+  max-width: 1100px; /* or whatever the maximum width you want */
+  margin: 0 auto; /* center the container */
+  padding: 0 20px; /* some padding on the sides */
+  margin-top: 150px;
+}
 .shadow-box {
   padding: 15px;
   margin: 10px;
@@ -82,5 +89,18 @@ onMount(async () => {
   margin-bottom: 20px;
   box-shadow: 60px 40px 64px rgba(0, 0, 0, 0.1); /* shadow effect */
   border-radius: 24px; /* optional: rounded corners */
+  box-sizing: border-box; /* makes padding included in the width */
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .shadow-box {
+    max-width: 100%; /* allows the boxes to be full width on small screens */
+    padding: 15px; /* reduce padding */
+    box-shadow: 30px 20px 32px rgba(0, 0, 0, 0.1); /* reduce shadow */
+  }
+  .shadow-box a {
+    padding: 0px; /* adjust as needed */
+  }
 }
 </style>

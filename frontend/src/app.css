@@ -13,14 +13,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  background: linear-gradient(
-    90deg,
-    #f0f8ff,
-    #a0d8f6,
-    #a0d8f6,
-    #f0f8ff,
-    #f0f8ff
-  );
+  background: linear-gradient(90deg, #e8f7f6, #b2e1f4, #89dae8, #27c4c7);
   background-size: 200% 100%;
   animation: gradient-background 40s linear infinite;
   color: #333;

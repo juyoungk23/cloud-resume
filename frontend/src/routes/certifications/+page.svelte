@@ -39,23 +39,25 @@ let certifications = [
 <h1 class="text-3xl text-center my-10">Certifications</h1>
 <div class="container mx-auto">
   {#each certifications as certification}
-    <div class="shadow-container flex">
-      <img
-        src={certification.image}
-        alt={certification.name}
-        class="w-24 h-24 object-cover mr-4"
-      />
-      <div>
-        <h5 class="text-2xl font-semibold">{certification.name}</h5>
-        <h6 class="text-xl text-gray-600 mb-2">
-          Date Obtained: {certification.date}
-        </h6>
-        <a
-          href={certification.link}
-          class="text-blue-500 underline hover:text-blue-700"
-        >
-          Certification Link
-        </a>
+    <div class="shadow-container">
+      <div class="certification-card flex">
+        <img
+          src={certification.image}
+          alt={certification.name}
+          class="w-24 h-24 object-cover mr-4"
+        />
+        <div>
+          <h5 class="text-2xl font-semibold">{certification.name}</h5>
+          <h6 class="text-xl text-gray-600 mb-2">
+            Date Obtained: {certification.date}
+          </h6>
+          <a
+            href={certification.link}
+            class="text-blue-500 underline hover:text-blue-700"
+          >
+            Certification Link
+          </a>
+        </div>
       </div>
     </div>
   {/each}
@@ -71,5 +73,37 @@ let certifications = [
   max-width: 70%;
   box-shadow: 60px 40px 64px rgba(0, 0, 0, 0.1); /* shadow effect */
   border-radius: 24px; /* optional: rounded corners */
+}
+
+.certification-card {
+  flex-direction: row; /* default: image on the left */
+}
+
+@media (max-width: 768px) {
+  .shadow-container {
+    max-width: 90%; /* increase width for smaller screens */
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .certification-card {
+    flex-direction: column; /* image on the top */
+    align-items: center; /* center alignment */
+  }
+
+  .certification-card img {
+    width: 100px; /* appropriate size for mobile */
+    height: 100px; /* appropriate size for mobile */
+    margin-right: 0; /* no right margin needed */
+    margin-bottom: 20px; /* add bottom margin */
+  }
+
+  .certification-card h5 {
+    font-size: 1.5rem; /* reduce font size for mobile */
+  }
+
+  .certification-card h6 {
+    font-size: 1rem; /* reduce font size for mobile */
+  }
 }
 </style>
