@@ -121,13 +121,13 @@ let personalProjects = [
 
 <style>
 .shadow-container {
-  border-radius: 20px;
   background: #ffffff;
   padding: 20px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
   margin: auto;
   margin-top: 40px;
   margin-bottom: 100px;
+  box-shadow: 60px 40px 64px rgba(0, 0, 0, 0.1); /* shadow effect */
+  border-radius: 24px; /* optional: rounded corners */
 }
 
 .header-box {

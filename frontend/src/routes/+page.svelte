@@ -27,22 +27,36 @@ onMount(async () => {
   <div
     class="shadow-box flex flex-col md:flex-row justify-center items-center space-y-3 md:space-y-0 md:space-x-3"
   >
-    <div class="flex space-x-2 items-center">
-      <img src="/linkedin.svg" alt="LinkedIn Logo" class="w-8 h-8" />
-      <a href="https://www.linkedin.com/in/juyoung-kim-2023/" target="_blank"
-        >LinkedIn</a
-      >
-    </div>
-    <div class="flex space-x-2 items-center">
-      <img src="/github.svg" alt="GitHub Logo" class="w-8 h-8" />
-      <a href="https://github.com/juyoungk23" target="_blank">GitHub</a>
-    </div>
-    <div class="flex space-x-2 items-center">
-      <img src="/instagram.svg" alt="Instagram Logo" class="w-8 h-8" />
-      <a href="https://www.instagram.com/juyoung.kim" target="_blank"
-        >Instagram</a
-      >
-    </div>
+    <a
+      href="https://www.linkedin.com/in/juyoung-kim-2023/"
+      target="_blank"
+      class="flex items-center"
+      ><img
+        src="/linkedin.svg"
+        alt="LinkedIn Logo"
+        class="w-8 h-8 mx-1"
+      />LinkedIn</a
+    >
+
+    <a
+      href="https://github.com/juyoungk23"
+      target="_blank"
+      class="flex items-center"
+    >
+      <img src="/github.svg" alt="GitHub Logo" class="w-8 h-8 mx-1" />GitHub</a
+    >
+
+    <a
+      href="https://www.instagram.com/juyoung.kim"
+      target="_blank"
+      class="flex items-center"
+    >
+      <img
+        src="/instagram.svg"
+        alt="Instagram Logo"
+        class="w-8 h-8 mx-1"
+      />Instagram</a
+    >
   </div>
 
   <!-- Challenge Link Box -->
@@ -58,9 +72,7 @@ onMount(async () => {
 
 <style>
 .shadow-box {
-  border-radius: 10px;
   padding: 15px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
   margin: 10px;
   background-color: white;
   max-width: 550px;
@@ -68,5 +80,7 @@ onMount(async () => {
   align-items: center;
   margin: auto;
   margin-bottom: 20px;
+  box-shadow: 60px 40px 64px rgba(0, 0, 0, 0.1); /* shadow effect */
+  border-radius: 24px; /* optional: rounded corners */
 }
 </style>

@@ -31,15 +31,15 @@ let education = [
 
 <style>
 .shadow-container {
-  border-radius: 20px;
   background: #ffffff;
   padding: 20px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
   margin: auto;
   margin-top: 80px;
   margin-bottom: 100px;
   max-width: 550px;
   padding-top: 40px;
   padding-bottom: 40px;
+  box-shadow: 60px 40px 64px rgba(0, 0, 0, 0.1); /* shadow effect */
+  border-radius: 24px; /* optional: rounded corners */
 }
 </style>

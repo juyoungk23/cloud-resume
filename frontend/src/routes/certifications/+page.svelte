@@ -63,13 +63,13 @@ let certifications = [
 
 <style>
 .shadow-container {
-  border-radius: 20px;
   background: #ffffff;
   padding: 20px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
   margin: auto;
   margin-top: 30px;
   margin-bottom: 30px;
   max-width: 70%;
+  box-shadow: 60px 40px 64px rgba(0, 0, 0, 0.1); /* shadow effect */
+  border-radius: 24px; /* optional: rounded corners */
 }
 </style>
