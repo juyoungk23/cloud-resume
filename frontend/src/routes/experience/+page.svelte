@@ -69,7 +69,7 @@ let personalProjects = [
 ];
 </script>
 
-<nav class="m-5">
+<nav class="mx-40 my-5">
   <a href="#professional" class="text-lg text-blue-700"
     >Professional Experience</a
   >
@@ -77,13 +77,17 @@ let personalProjects = [
   <a href="#personal" class="text-lg text-blue-700">Personal Projects</a>
 </nav>
 
-<h1 id="professional" class="text-4xl text-center my-20">
+<h1 id="professional" class="text-4xl text-center my-10">
   Professional Experience
 </h1>
-<div class="container mx-auto">
-  {#each professionalExperiences as experience}
-    <div class="bg-white shadow-sm rounded p-6 mb-20">
-      <h5 class="text-2xl font-semibold">{experience.title}</h5>
+<div class="container mx-auto shadow-container">
+  {#each professionalExperiences as experience, index}
+    <div
+      class="p-6 {index !== professionalExperiences.length - 1
+        ? 'border-b'
+        : ''}"
+    >
+      <h5 class="text-2xl font-bold">{experience.title}</h5>
       <h6 class="text-xl text-gray-600">{experience.date}</h6>
       <h6 class="text-lg font-medium">{experience.company}</h6>
       <ul class="list-inside list-disc mt-2 text-lg">
@@ -94,18 +98,15 @@ let personalProjects = [
     </div>
   {/each}
 </div>
-
-<h1 id="personal" class="text-4xl text-center my-20">Personal Projects</h1>
-<div class="container mx-auto">
-  {#each personalProjects as project}
-    <!-- https://pngimg.com/uploads/github/github_PNG40.png -->
-    <div class="bg-white shadow-sm rounded p-6 mb-20">
-      <h5 class="text-2xl font-semibold">{project.title}</h5>
+<h1 id="personal" class="text-4xl text-center my-10">Personal Projects</h1>
+<div class="container mx-auto shadow-container">
+  {#each personalProjects as project, index}
+    <div class="p-6 {index !== personalProjects.length - 1 ? 'border-b' : ''}">
+      <h5 class="text-2xl font-bold">{project.title}</h5>
       <h6 class="text-xl text-gray-600 mb-2">{project.date}</h6>
       <p class="text-lg">{project.description}</p>
       <div class="flex items-center">
         <img src="/github-logo.svg" alt="GitHub Logo" class="w-8 h-8 m-2" />
-
         <a
           href={project.repo}
           class="text-blue-500 underline hover:text-blue-700"
@@ -117,3 +118,27 @@ let personalProjects = [
     </div>
   {/each}
 </div>
+
+<style>
+.shadow-container {
+  border-radius: 20px;
+  background: #ffffff;
+  padding: 20px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+
+.header-box {
+  max-width: 400px;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-radius: 20px;
+}
+</style>

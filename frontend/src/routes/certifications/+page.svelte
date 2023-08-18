@@ -39,7 +39,7 @@ let certifications = [
 <h1 class="text-3xl text-center my-10">Certifications</h1>
 <div class="container mx-auto">
   {#each certifications as certification}
-    <div class="flex bg-white shadow-2xl rounded p-6 mb-4 mx-5">
+    <div class="shadow-container flex">
       <img
         src={certification.image}
         alt={certification.name}
@@ -60,3 +60,16 @@ let certifications = [
     </div>
   {/each}
 </div>
+
+<style>
+.shadow-container {
+  border-radius: 20px;
+  background: #ffffff;
+  padding: 20px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  max-width: 70%;
+}
+</style>
