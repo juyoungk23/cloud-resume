@@ -1,3 +1,5 @@
+# GCP Cloud Resume Challenge
+
 # [www.juyoungkim.dev](https://www.juyoungkim.dev)
 
 Welcome to my personal project! Visit my live site at [www.juyoungkim.dev](https://www.juyoungkim.dev) to explore what I've been working on. Below, you'll find detailed information about the architecture, development process, and how you can run the project locally.
@@ -60,5 +62,3 @@ To run this project locally, you'll need to have pnpm and Vite installed. Follow
 Enjoy exploring the code!
 
 ---
-
-<p style="font-size: 1.125rem; line-height: 1.75rem; margin: 1.5rem 0;">Note: Additional styles and effects can be applied as found in the original HTML description.</p>
