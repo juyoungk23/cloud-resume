@@ -159,10 +159,7 @@ let personalProjects = [
     padding: 10px;
     max-width: 800px; /* adjust as needed for desktop */
   }
-  .shadow-container-links {
-    margin-left: 25%; /* more left margin for desktop */
-    margin-right: 25%; /* more right margin for desktop */
-  }
+
   .shadow-container {
     margin-top: 40px; /* larger top margin for bigger screens */
   }

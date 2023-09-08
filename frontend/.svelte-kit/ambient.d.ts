@@ -26,20 +26,20 @@
  * ```
  */
 declare module '$env/static/private' {
-	export const MallocNanoZone: string;
-	export const USER: string;
 	export const COMMAND_MODE: string;
-	export const __CFBundleIdentifier: string;
-	export const PATH: string;
-	export const LOGNAME: string;
-	export const SSH_AUTH_SOCK: string;
 	export const HOME: string;
-	export const SHELL: string;
-	export const TMPDIR: string;
-	export const __CF_USER_TEXT_ENCODING: string;
-	export const XPC_SERVICE_NAME: string;
-	export const XPC_FLAGS: string;
+	export const LOGNAME: string;
+	export const MallocNanoZone: string;
 	export const ORIGINAL_XDG_CURRENT_DESKTOP: string;
+	export const PATH: string;
+	export const SHELL: string;
+	export const SSH_AUTH_SOCK: string;
+	export const TMPDIR: string;
+	export const USER: string;
+	export const XPC_FLAGS: string;
+	export const XPC_SERVICE_NAME: string;
+	export const __CFBundleIdentifier: string;
+	export const __CF_USER_TEXT_ENCODING: string;
 	export const TERM_PROGRAM: string;
 	export const TERM_PROGRAM_VERSION: string;
 	export const LANG: string;
@@ -100,20 +100,20 @@ declare module '$env/static/public' {
  */
 declare module '$env/dynamic/private' {
 	export const env: {
-		MallocNanoZone: string;
-		USER: string;
 		COMMAND_MODE: string;
-		__CFBundleIdentifier: string;
-		PATH: string;
-		LOGNAME: string;
-		SSH_AUTH_SOCK: string;
 		HOME: string;
-		SHELL: string;
-		TMPDIR: string;
-		__CF_USER_TEXT_ENCODING: string;
-		XPC_SERVICE_NAME: string;
-		XPC_FLAGS: string;
+		LOGNAME: string;
+		MallocNanoZone: string;
 		ORIGINAL_XDG_CURRENT_DESKTOP: string;
+		PATH: string;
+		SHELL: string;
+		SSH_AUTH_SOCK: string;
+		TMPDIR: string;
+		USER: string;
+		XPC_FLAGS: string;
+		XPC_SERVICE_NAME: string;
+		__CFBundleIdentifier: string;
+		__CF_USER_TEXT_ENCODING: string;
 		TERM_PROGRAM: string;
 		TERM_PROGRAM_VERSION: string;
 		LANG: string;
