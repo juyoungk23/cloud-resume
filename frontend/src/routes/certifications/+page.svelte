@@ -3,16 +3,16 @@ let gcpCertifications = [
   {
     name: "Google Cloud Platform Associate Cloud Engineer",
     date: "2021-01-01",
-    link: "https://www.credential.net/0b1b1d1e-5b7a-4b7e-9b1a-5b8b1b1b1b1b",
+    link: "https://google.accredible.com/bc34324f-b4dd-417e-859f-1945d65d7941?key=ecf8b7083c4fa3b15ffc87ded7ad5647aa729e56e83c5508445de38877111839",
     image: "https://k21academy.com/wp-content/uploads/2020/12/GCP-ACE.png",
   },
-  {
-    name: "Google Cloud Platform Cloud Architect",
-    date: "2021-01-01",
-    link: "https://www.credential.net/0b1b1d1e-5b7a-4b7e-9b1a-5b8b1b1b1b1b",
-    image:
-      "https://passyourcert.net/wp-content/uploads/2021/12/badge-gcp-professional-cloud-architect.png",
-  },
+  // {
+  //   name: "Google Cloud Platform Cloud Architect",
+  //   date: "2021-01-01",
+  //   link: "https://www.credential.net/0b1b1d1e-5b7a-4b7e-9b1a-5b8b1b1b1b1b",
+  //   image:
+  //     "https://passyourcert.net/wp-content/uploads/2021/12/badge-gcp-professional-cloud-architect.png",
+  // },
 ];
 let azureCertifications = [
   {
@@ -57,6 +57,7 @@ let linuxCertifications = [
             <a
               href={certification.link}
               class="text-blue-500 underline hover:text-blue-700"
+              target="_blank"
             >
               Certification Link
             </a>
@@ -65,7 +66,7 @@ let linuxCertifications = [
       </div>
     {/each}
   </div>
-  <div class="cert-container">
+  <!-- <div class="cert-container">
     <img
       src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Microsoft_Azure.svg"
       alt="Microsoft Azure Logo"
@@ -87,6 +88,7 @@ let linuxCertifications = [
             <a
               href={certification.link}
               class="text-blue-500 underline hover:text-blue-700"
+              target="_blank"
             >
               Certification Link
             </a>
@@ -118,6 +120,7 @@ let linuxCertifications = [
             <a
               href={certification.link}
               class="text-blue-500 underline hover:text-blue-700"
+              target="_blank"
             >
               Certification Link
             </a>
@@ -125,7 +128,7 @@ let linuxCertifications = [
         </div>
       </div>
     {/each}
-  </div>
+  </div> -->
 </div>
 
 <style>
