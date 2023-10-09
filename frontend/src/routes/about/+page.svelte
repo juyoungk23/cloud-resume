@@ -165,23 +165,23 @@
 </div>
 
 <style>
-p {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  margin: 1.5rem 0;
-}
+  p {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    margin: 1.5rem 0;
+  }
 
-.intro-card {
-  background: #ffffff; /* white background */
-  padding: 1.5rem; /* card padding */
-  margin: 3rem 0; /* card margin */
-  box-shadow: 60px 40px 64px rgba(0, 0, 0, 0.1); /* shadow effect */
-  border-radius: 24px; /* optional: rounded corners */
-}
+  .intro-card {
+    background: #ffffff; /* white background */
+    padding: 1.5rem; /* card padding */
+    margin: 3rem 0; /* card margin */
+    box-shadow: 60px 40px 64px rgba(0, 0, 0, 0.1); /* shadow effect */
+    border-radius: 24px; /* optional: rounded corners */
+  }
 
-/* Optional: Add a class for visual breaks between sections */
-.section-break {
-  border-bottom: 1px solid #ccc;
-  margin: 2rem 0;
-}
+  /* Optional: Add a class for visual breaks between sections */
+  .section-break {
+    border-bottom: 1px solid #ccc;
+    margin: 2rem 0;
+  }
 </style>

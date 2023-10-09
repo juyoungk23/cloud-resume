@@ -12,8 +12,9 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  background: linear-gradient(90deg, #e8f7f6, #b2e1f4, #89dae8, #27c4c7);
+  font-family: "Open Sans", sans-serif;
+  /* background: linear-gradient(90deg, #e8f7f6, #b2e1f4, #89dae8, #27c4c7); */
+  background: linear-gradient(90deg, #D1D0D0, #efebe2, rgb(214, 214, 214), #efebe2, #D1D0D0 );
   background-size: 200% 100%;
   animation: gradient-background 40s linear infinite;
   color: #333;
