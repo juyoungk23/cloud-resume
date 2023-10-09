@@ -33,7 +33,7 @@
   ];
 </script>
 
-<h1 class="text-3xl text-center my-10">Certifications</h1>
+<h1 class="text-4xl text-center my-10">Certifications</h1>
 <div class="container mx-auto">
   <div class="cert-container">
     <img
@@ -133,7 +133,8 @@
 
 <style>
   .shadow-container {
-    background: #ffffff;
+    /* background: #ffffff; */
+    background-color: rgb(247, 244, 242);
     padding: 20px;
     margin: auto;
     margin-top: 30px;

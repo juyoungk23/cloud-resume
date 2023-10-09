@@ -1,15 +1,15 @@
 <script>
-let education = [
-  {
-    university: "The University of North Carolina at Chapel Hill",
-    degree: "B.S. in Computer Science",
-    graduationDate: "August 2019 - May 2023",
-  },
-  // You can add more entries if you have other degrees or attended other universities
-];
+  let education = [
+    {
+      university: "The University of North Carolina at Chapel Hill",
+      degree: "B.S. in Computer Science",
+      graduationDate: "August 2019 - May 2023",
+    },
+    // You can add more entries if you have other degrees or attended other universities
+  ];
 </script>
 
-<h1 class="text-3xl text-center my-10">Education</h1>
+<h1 class="text-4xl text-center my-10">Education</h1>
 <div class="justify-center text-center my-10 shadow-container">
   {#each education as edu}
     <div class="card">
@@ -30,37 +30,38 @@ let education = [
 </div>
 
 <style>
-.shadow-container {
-  background: #ffffff;
-  padding: 20px;
-  margin: auto;
-  margin-top: 80px;
-  margin-bottom: 100px;
-  max-width: 550px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  box-shadow: 60px 40px 64px rgba(0, 0, 0, 0.1); /* shadow effect */
-  border-radius: 24px; /* optional: rounded corners */
-}
-
-.card {
-  padding: 10px;
-}
-
-@media (max-width: 768px) {
   .shadow-container {
-    max-width: 90%; /* take up 90% of the screen width */
-    margin-top: 40px; /* reduce top margin */
-    padding: 15px;
+    /* background: #ffffff; */
+    background-color: rgb(247, 244, 242);
+    padding: 20px;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    max-width: 550px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    box-shadow: 60px 40px 64px rgba(0, 0, 0, 0.1); /* shadow effect */
+    border-radius: 24px; /* optional: rounded corners */
   }
 
-  .card .flex {
-    flex-direction: column; /* stack content vertically */
-    align-items: center; /* center items */
+  .card {
+    padding: 10px;
   }
 
-  .card img {
-    margin: 15px 0; /* adjust margin for vertical layout */
+  @media (max-width: 768px) {
+    .shadow-container {
+      max-width: 90%; /* take up 90% of the screen width */
+      margin-top: 40px; /* reduce top margin */
+      padding: 15px;
+    }
+
+    .card .flex {
+      flex-direction: column; /* stack content vertically */
+      align-items: center; /* center items */
+    }
+
+    .card img {
+      margin: 15px 0; /* adjust margin for vertical layout */
+    }
   }
-}
 </style>

@@ -172,7 +172,8 @@
   }
 
   .intro-card {
-    background: #ffffff; /* white background */
+    /* background: #ffffff; */
+    background-color: rgb(247, 244, 242);
     padding: 1.5rem; /* card padding */
     margin: 3rem 0; /* card margin */
     box-shadow: 60px 40px 64px rgba(0, 0, 0, 0.1); /* shadow effect */

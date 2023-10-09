@@ -1,19 +1,19 @@
 <script>
-import { onMount } from "svelte";
+  import { onMount } from "svelte";
 
-let count = 0;
+  let count = 0;
 
-onMount(async () => {
-  try {
-    const response = await fetch(
-      "https://cloud-resume-backend-j4vk2vgrha-wl.a.run.app/api/visitor-count",
-    );
-    const data = await response.json();
-    count = data.count; // Adjust based on the actual response structure
-  } catch (error) {
-    console.error("Error fetching visitor count:", error);
-  }
-});
+  onMount(async () => {
+    try {
+      const response = await fetch(
+        "https://cloud-resume-backend-j4vk2vgrha-wl.a.run.app/api/visitor-count"
+      );
+      const data = await response.json();
+      count = data.count; // Adjust based on the actual response structure
+    } catch (error) {
+      console.error("Error fetching visitor count:", error);
+    }
+  });
 </script>
 
 <div class="mt-20 container">
@@ -71,36 +71,36 @@ onMount(async () => {
 </div>
 
 <style>
-.container {
-  width: 100%;
-  max-width: 1100px; /* or whatever the maximum width you want */
-  margin: 0 auto; /* center the container */
-  padding: 0 20px; /* some padding on the sides */
-  margin-top: 150px;
-}
-.shadow-box {
-  padding: 15px;
-  margin: 10px;
-  background-color: white;
-  max-width: 550px;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  margin-bottom: 20px;
-  box-shadow: 60px 40px 64px rgba(0, 0, 0, 0.1); /* shadow effect */
-  border-radius: 24px; /* optional: rounded corners */
-  box-sizing: border-box; /* makes padding included in the width */
-}
-
-/* Media query for small screens */
-@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    max-width: 1100px; /* or whatever the maximum width you want */
+    margin: 0 auto; /* center the container */
+    padding: 0 20px; /* some padding on the sides */
+    margin-top: 100px;
+  }
   .shadow-box {
-    max-width: 100%; /* allows the boxes to be full width on small screens */
-    padding: 15px; /* reduce padding */
-    box-shadow: 30px 20px 32px rgba(0, 0, 0, 0.1); /* reduce shadow */
+    padding: 35px;
+    margin: 10px;
+    background-color: rgb(247, 243, 241);
+    max-width: 550px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 20px;
+    box-shadow: 60px 40px 64px rgba(0, 0, 0, 0.1); /* shadow effect */
+    border-radius: 24px; /* optional: rounded corners */
+    box-sizing: border-box; /* makes padding included in the width */
   }
-  .shadow-box a {
-    padding: 0px; /* adjust as needed */
+
+  /* Media query for small screens */
+  @media (max-width: 768px) {
+    .shadow-box {
+      max-width: 100%; /* allows the boxes to be full width on small screens */
+      padding: 15px; /* reduce padding */
+      box-shadow: 30px 20px 32px rgba(0, 0, 0, 0.1); /* reduce shadow */
+    }
+    .shadow-box a {
+      padding: 0px; /* adjust as needed */
+    }
   }
-}
 </style>
