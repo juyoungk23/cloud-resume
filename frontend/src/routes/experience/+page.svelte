@@ -7,7 +7,7 @@
       responsibilities: [
         "Created and maintained a working connection between Python, Teradata, and MongoDB.",
         "Used big, enterprise-level databases technologies such as Teradata and Informatica.",
-        "Used AutoSys to schedule jobs.",
+        "Created Proof-Of-Concepts for Wells Fargo to use Seismic's FinTech services.",
       ],
     },
     {
@@ -32,38 +32,43 @@
 
   let personalProjects = [
     {
+      title: "3D Design Editor",
+      date: "August 2023 - Present",
+      description: [
+        "Developing a 3D design editor to enable users to create engaging 3D designs more easily (Unity, C#, Cloud Storage, GCP Firestore). Along with the increasing demand for VR/MR products like Meta Quest 3, Apple Vision Pro, PCVR, etc, there will also be creators who want to make 3D content. However, the current 3D design tools are not user-friendly and require a lot of time to learn. This project aims to solve this problem by creating a 3D design editor that is easy to use and intuitive.",
+      ],
+      repo: "https://github.com/juyoungk23/stereoscopicEditorOculus",
+    },
+    {
       title: "Cloud Resume Challenge",
       date: "August 2023",
-      description:
+      description: [
         "Hosting a personal resume website on GCP using Cloud Storage, Cloud Run, and Cloud Build. (GCP, Cloud Storage, Cloud Run, Cloud Build)",
+      ],
       repo: "https://github.com/juyoungk23/cloud-resume",
     },
     {
       title: "Augmented Reality Geolocated Forums (In Development)",
       date: "August 2022 - Present",
-      description:
+      description: [
         "Developing an application to enable college students to communicate via geolocated forums using augmented reality. (Unity, C#, XCode, Basic Game Development)",
-      repo: "https://www.google.com",
-    },
-    {
-      title: "Customer Service AI Phone Voice Assistant (In Development)",
-      date: "April 2023 - Present",
-      description:
-        "Creating an AI voice assistant that leverages NLP to help inquiring customers have a seamless experience with small businesses, with the ability to route calls to human representatives for more in-depth assistance. (Python, Flask IO, NLP, Twilio API, Google API)",
+      ],
       repo: "https://www.google.com",
     },
     {
       title: "Personal Home Assistant",
       date: "January 2023 - Present",
-      description:
+      description: [
         "Developing a personal home assistant inspired by JARVIS from Iron Man, capable of providing news updates, playing music, launching apps, tracking finances, playing YouTube videos, and notifying weather forecasts. (Python, Flask IO, NLP, Google, Spotify, and other integrations)",
+      ],
       repo: "https://www.google.com",
     },
     {
       title: "Cloud Journal",
       date: "August 2023",
-      description:
-        "An on-the-go journal to jot down thoughts and goals wherever you go. Designed for personal use, this journal is hosted on the cloud and can periodically send emails with past thoughts, reminding of past thoughts and showing how they change over time. It also performs word frequency analysis on goals and displays a barplot for viewing. (Cloud, Email Integration)",
+      description: [
+        "An on-the-go journal to jot down thoughts and goals. Designed for personal use, this journal is hosted on the cloud and periodically sends me emails, reminding me of past thoughts and showing how they change over time. It also performs word frequency analysis on goals and displays a barplot for viewing. (Cloud, Email Integration)",
+      ],
       repo: "https://github.com/juyoungk23/personal-site",
     },
   ];
@@ -112,7 +117,15 @@
     >
       <h5 class="text-xl sm:text-2xl font-bold">{project.title}</h5>
       <h6 class="text-lg sm:text-xl text-gray-600 mb-2">{project.date}</h6>
-      <p class="text-md sm:text-lg">{project.description}</p>
+
+      <!-- project description should be bullet points for each item in the description array -->
+      <ul>
+        {#each project.description as description}
+          <li>{description}</li>
+        {/each}
+      </ul>
+
+      <!--     <p class="text-md sm:text-lg">{project.description}</p> -->
       <div class="flex items-center">
         <img
           src="/github-logo.svg"
@@ -155,14 +168,14 @@
 
   /* Styles for screens larger than 768px */
   @media (min-width: 768px) {
-    .shadow-container,
+    .shadow-container {
+      padding: 20px;
+      max-width: 800px;
+      margin-top: 40px;
+    }
     .shadow-container-links {
       padding: 10px;
-      max-width: 800px; /* adjust as needed for desktop */
-    }
-
-    .shadow-container {
-      margin-top: 40px; /* larger top margin for bigger screens */
+      max-width: 400px; /* adjust as needed for desktop */
     }
   }
 </style>

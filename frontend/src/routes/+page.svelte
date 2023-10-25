@@ -60,13 +60,18 @@
   </div>
 
   <!-- Challenge Link Box -->
-  <div class="shadow-box text-center my-10">
+  <!-- <div class="shadow-box text-center my-10">
     This website follows the
     <a
       href="https://www.pluralsight.com/resources/blog/cloud/cloudguruchallenge-your-resume-on-gcp"
       target="_blank"
       class="text-blue-400">GCP Cloud Resume Challenge</a
     >!
+  </div> -->
+
+  <div class="shadow-box text-center my-10">
+    <div>Email me at:</div>
+    juyoungk23@gmail.com
   </div>
 </div>
 
