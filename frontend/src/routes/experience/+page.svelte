@@ -118,14 +118,11 @@
       <h5 class="text-xl sm:text-2xl font-bold">{project.title}</h5>
       <h6 class="text-lg sm:text-xl text-gray-600 mb-2">{project.date}</h6>
 
-      <!-- project description should be bullet points for each item in the description array -->
-      <ul>
+      <ul class="list-inside list-disc mt-2 text-md sm:text-lg">
         {#each project.description as description}
-          <li>{description}</li>
+          {description}
         {/each}
       </ul>
-
-      <!--     <p class="text-md sm:text-lg">{project.description}</p> -->
       <div class="flex items-center">
         <img
           src="/github-logo.svg"

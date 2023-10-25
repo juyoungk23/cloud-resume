@@ -1,10 +1,10 @@
 <div class="px-4 lg:px-80 mb-20 mt-10">
-  <h1 class="text-center text-4xl my-2">About this Project</h1>
+  <h1 class="text-center text-4xl my-2">About This Website</h1>
   <p class="intro-card">
     Welcome to the architectural overview of my Cloud Resume Challenge project.
     Below, you'll find a diagram that illustrates how different parts of the
     system interact with each other, along with a description of the
-    technologies used.
+    technologies used to make this website.
   </p>
 
   <img
@@ -174,7 +174,7 @@
   .intro-card {
     /* background: #ffffff; */
     background-color: rgb(247, 244, 242);
-    padding: 1.5rem; /* card padding */
+    padding: 30px;
     margin: 3rem 0; /* card margin */
     box-shadow: 60px 40px 64px rgba(0, 0, 0, 0.1); /* shadow effect */
     border-radius: 24px; /* optional: rounded corners */

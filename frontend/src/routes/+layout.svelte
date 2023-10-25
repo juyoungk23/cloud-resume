@@ -9,7 +9,7 @@
     <a href="/certifications">Certifications</a>
     <a href="/education">Education</a>
     <!-- <a href="/blog">Blog</a> -->
-    <a href="/about">About This Project</a>
+    <a href="/about">About This Website</a>
   </div>
 </nav>
 <div class="content-container">

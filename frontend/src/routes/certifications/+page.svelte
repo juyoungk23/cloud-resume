@@ -4,7 +4,8 @@
       name: "Google Cloud Platform Associate Cloud Engineer",
       date: "2023-09-07",
       link: "https://google.accredible.com/bc34324f-b4dd-417e-859f-1945d65d7941?key=ecf8b7083c4fa3b15ffc87ded7ad5647aa729e56e83c5508445de38877111839",
-      image: "https://k21academy.com/wp-content/uploads/2020/12/GCP-ACE.png",
+      image: "GCP-ACE.png",
+      // image: "https://k21academy.com/wp-content/uploads/2020/12/GCP-ACE.png",
     },
     // {
     //   name: "Google Cloud Platform Cloud Architect",
@@ -36,8 +37,13 @@
 <h1 class="text-4xl text-center my-10">Certifications</h1>
 <div class="container mx-auto">
   <div class="cert-container">
-    <img
+    <!-- <img
       src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg"
+      alt="Google Cloud Logo"
+      class="w-48 h-48 mx-auto"
+    /> -->
+    <img
+      src="/Google_G_Logo.svg"
       alt="Google Cloud Logo"
       class="w-48 h-48 mx-auto"
     />
@@ -136,10 +142,12 @@
     /* background: #ffffff; */
     background-color: rgb(247, 244, 242);
     padding: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     margin: auto;
     margin-top: 30px;
     margin-bottom: 30px;
-    max-width: 70%;
+    max-width: 50%;
     box-shadow: 60px 40px 64px rgba(0, 0, 0, 0.1); /* shadow effect */
     border-radius: 24px; /* optional: rounded corners */
   }
