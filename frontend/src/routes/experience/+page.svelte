@@ -45,7 +45,7 @@
       description: [
         "A program that sends a daily email with a photo from a user's Google Photos library. Originally made as a birthday gift for my mother. Sends her a photo of our family once a day. (Python, Google Photos API, SendGrid API, GCP Cloud Scheduler, GCP Cloud Functions)",
       ],
-      repo: "https://www.google.com",
+      repo: "",
     },
     {
       title: "Cloud Resume Challenge",
@@ -56,20 +56,20 @@
       repo: "https://github.com/juyoungk23/cloud-resume",
     },
     {
-      title: "Personal Home Assistant",
-      date: "January 2023 - Present",
-      description: [
-        "Developing a personal home assistant inspired by JARVIS from Iron Man, capable of providing news updates, playing music, launching apps, tracking finances, playing YouTube videos, and notifying weather forecasts. (Python, Flask IO, NLP, Google, Spotify, and other integrations)",
-      ],
-      repo: "https://www.google.com",
-    },
-    {
       title: "Cloud Journal",
       date: "August 2023",
       description: [
         "An on-the-go journal to jot down thoughts and goals. Designed for personal use, this journal is hosted on the cloud and periodically sends me emails, reminding me of past thoughts and showing how they change over time. It also performs word frequency analysis on goals and displays a barplot for viewing. (Cloud, Email Integration)",
       ],
       repo: "https://github.com/juyoungk23/personal-site",
+    },
+    {
+      title: "Personal Home Assistant",
+      date: "January 2023 - Present",
+      description: [
+        "Developing a personal home assistant inspired by JARVIS from Iron Man, capable of providing news updates, playing music, launching apps, tracking finances, playing YouTube videos, and notifying weather forecasts. (Python, Flask IO, NLP, Google, Spotify, and other integrations)",
+      ],
+      repo: "https://www.google.com",
     },
   ];
 </script>
@@ -123,20 +123,23 @@
           {description}
         {/each}
       </ul>
-      <div class="flex items-center">
-        <img
-          src="/github-logo.svg"
-          alt="GitHub Logo"
-          class="w-6 sm:w-8 h-6 sm:h-8 m-1 sm:m-2"
-        />
-        <a
-          href={project.repo}
-          class="text-blue-500 underline hover:text-blue-700"
-          target="_blank"
-        >
-          Repository Link
-        </a>
-      </div>
+      <!-- if repository link is null, dont put it -->
+      {#if project.repo}
+        <div class="flex items-center">
+          <img
+            src="/github-logo.svg"
+            alt="GitHub Logo"
+            class="w-6 sm:w-8 h-6 sm:h-8 m-1 sm:m-2"
+          />
+          <a
+            href={project.repo}
+            class="text-blue-500 underline hover:text-blue-700"
+            target="_blank"
+          >
+            Repository Link
+          </a>
+        </div>
+      {/if}
     </div>
   {/each}
 </div>
