@@ -21,7 +21,7 @@
     },
     {
       title: "Operations Consultant",
-      date: "December 2020 – Present",
+      date: "December 2020 – June 2023",
       company: "Shiplify, Atlanta, GA",
       responsibilities: [
         "Provide accurate locational information for LTL shipment companies to optimize operations and minimize revenue loss.",
