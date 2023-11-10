@@ -40,20 +40,20 @@
       repo: "https://github.com/juyoungk23/stereoscopicEditorOculus",
     },
     {
+      title: "Photo Sender",
+      date: "November 2023",
+      description: [
+        "A program that sends a daily email with a photo from a user's Google Photos library. Originally made as a birthday gift for my mother. Sends her a photo of our family once a day. (Python, Google Photos API, SendGrid API, GCP Cloud Scheduler, GCP Cloud Functions)",
+      ],
+      repo: "https://www.google.com",
+    },
+    {
       title: "Cloud Resume Challenge",
       date: "August 2023",
       description: [
         "Hosting a personal resume website on GCP using Cloud Storage, Cloud Run, and Cloud Build. (GCP, Cloud Storage, Cloud Run, Cloud Build)",
       ],
       repo: "https://github.com/juyoungk23/cloud-resume",
-    },
-    {
-      title: "Augmented Reality Geolocated Forums (In Development)",
-      date: "August 2022 - Present",
-      description: [
-        "Developing an application to enable college students to communicate via geolocated forums using augmented reality. (Unity, C#, XCode, Basic Game Development)",
-      ],
-      repo: "https://www.google.com",
     },
     {
       title: "Personal Home Assistant",
