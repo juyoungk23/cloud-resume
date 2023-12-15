@@ -6,7 +6,7 @@
       company: "Wells Fargo, San Francisco, CA",
       responsibilities: [
         "Created and maintained a working connection between Python, Teradata, and MongoDB.",
-        "Used big, enterprise-level databases technologies such as Teradata and Informatica.",
+        "Used enterprise-level databases technologies such as Teradata and Informatica.",
         "Created Proof-Of-Concepts for Wells Fargo to use Seismic's FinTech services.",
       ],
     },
@@ -32,6 +32,17 @@
 
   let personalProjects = [
     {
+      title: "Live Voice Translator",
+      date: "December 2023",
+      description: [
+        "A python program that takes your voice input and translates it into another language in real-time. (Python, Google Cloud Speech-to-Text API, Google Cloud Translate API, Eleven Labs API). ",
+        "Can choose from 29 languages to translate to. Currently supports my voice and my friends' voices. ",
+        "Working on allowing users to clone their own voice, or use a different voice."
+      ],
+      repo: "https://github.com/juyoungk23/liveVoiceTranslator",
+      demo: "https://thevoicetranslator.com/"
+    },
+    {
       title: "3D Design Editor",
       date: "August 2023 - Present",
       description: [
@@ -40,10 +51,10 @@
       repo: "https://github.com/juyoungk23/stereoscopicEditorOculus",
     },
     {
-      title: "Photo Sender",
+      title: "Daily Memory",
       date: "November 2023",
       description: [
-        "A program that sends a daily email with a photo from a user's Google Photos library. Originally made as a birthday gift for my mother. Sends her a photo of our family once a day. (Python, Google Photos API, SendGrid API, GCP Cloud Scheduler, GCP Cloud Functions)",
+        "A program that displays a random photo each day from our family album (Google Photos API). Originally made as a birthday gift for my mother. Sends her a photo of our family once a day. (Python, Google Photos API, SendGrid API, GCP Cloud Scheduler, GCP Cloud Functions)",
       ],
       repo: "",
     },
@@ -61,16 +72,16 @@
       description: [
         "An on-the-go journal to jot down thoughts and goals. Designed for personal use, this journal is hosted on the cloud and periodically sends me emails, reminding me of past thoughts and showing how they change over time. It also performs word frequency analysis on goals and displays a barplot for viewing. (Cloud, Email Integration)",
       ],
-      repo: "https://github.com/juyoungk23/personal-site",
+      repo: "https://github.com/juyoungk23/cloud-journal",
     },
-    {
-      title: "Personal Home Assistant",
-      date: "January 2023 - Present",
-      description: [
-        "Developing a personal home assistant inspired by JARVIS from Iron Man, capable of providing news updates, playing music, launching apps, tracking finances, playing YouTube videos, and notifying weather forecasts. (Python, Flask IO, NLP, Google, Spotify, and other integrations)",
-      ],
-      repo: "https://www.google.com",
-    },
+    // {
+    //   title: "Personal Home Assistant",
+    //   date: "January 2023 - Present",
+    //   description: [
+    //     "Developing a personal home assistant inspired by JARVIS from Iron Man, capable of providing news updates, playing music, launching apps, tracking finances, playing YouTube videos, and notifying weather forecasts. (Python, Flask IO, NLP, Google, Spotify, and other integrations)",
+    //   ],
+    //   repo: "https://www.google.com",
+    // },
   ];
 </script>
 
@@ -123,23 +134,37 @@
           {description}
         {/each}
       </ul>
-      <!-- if repository link is null, dont put it -->
-      {#if project.repo}
-        <div class="flex items-center">
-          <img
-            src="/github-logo.svg"
-            alt="GitHub Logo"
-            class="w-6 sm:w-8 h-6 sm:h-8 m-1 sm:m-2"
-          />
-          <a
-            href={project.repo}
-            class="text-blue-500 underline hover:text-blue-700"
-            target="_blank"
-          >
-            Repository Link
-          </a>
-        </div>
-      {/if}
+      <div class="flex items-center">
+
+<!-- if project.demo is not empty string, link it -->
+{#if project.demo}
+<a
+  href={project.demo}
+  class="text-blue-500 underline hover:text-blue-700"
+  target="_blank"
+  >Demo Link</a
+>
+{/if}
+{#if project.repo}
+  <div class="flex items-center">
+    <img
+      src="/github-logo.svg"
+      alt="GitHub Logo"
+      class="w-6 sm:w-8 h-6 sm:h-8 m-1 sm:m-2"
+    />
+    
+    <a
+      href={project.repo}
+      class="text-blue-500 underline hover:text-blue-700"
+      target="_blank"
+    >
+      Repository Link
+    </a>
+  </div>
+{/if}
+      </div>
+
+      
     </div>
   {/each}
 </div>
