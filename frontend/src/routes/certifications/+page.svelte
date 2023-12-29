@@ -1,14 +1,14 @@
 <script>
   let gcpCertifications = [
     {
-      name: "Google Cloud Platform Associate Cloud Engineer",
+      name: "Google Cloud Certified Associate Cloud Engineer",
       date: "2023-09-07",
       link: "https://google.accredible.com/bc34324f-b4dd-417e-859f-1945d65d7941?key=ecf8b7083c4fa3b15ffc87ded7ad5647aa729e56e83c5508445de38877111839",
       image: "GCP-ACE.png",
       // image: "https://k21academy.com/wp-content/uploads/2020/12/GCP-ACE.png",
     },
     {
-      name: "Google Cloud Platform Cloud Architect",
+      name: "Google Cloud Certified Professional Cloud Architect",
       date: "2023-12-28",
       link: "https://google.accredible.com/c6ae548b-76d4-43cd-99c7-8b3029e8fd57#gs.29w4xj",
       image:
