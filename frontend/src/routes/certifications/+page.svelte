@@ -7,13 +7,13 @@
       image: "GCP-ACE.png",
       // image: "https://k21academy.com/wp-content/uploads/2020/12/GCP-ACE.png",
     },
-    // {
-    //   name: "Google Cloud Platform Cloud Architect",
-    //   date: "2021-01-01",
-    //   link: "https://www.credential.net/0b1b1d1e-5b7a-4b7e-9b1a-5b8b1b1b1b1b",
-    //   image:
-    //     "https://passyourcert.net/wp-content/uploads/2021/12/badge-gcp-professional-cloud-architect.png",
-    // },
+    {
+      name: "Google Cloud Platform Cloud Architect",
+      date: "2023-12-28",
+      link: "https://google.accredible.com/c6ae548b-76d4-43cd-99c7-8b3029e8fd57#gs.29w4xj",
+      image:
+        "https://passyourcert.net/wp-content/uploads/2021/12/badge-gcp-professional-cloud-architect.png",
+    },
   ];
   let azureCertifications = [
     {
@@ -45,7 +45,7 @@
     <img
       src="/Google_G_Logo.svg"
       alt="Google Cloud Logo"
-      class="w-48 h-48 mx-auto"
+      class="w-40 h-40 mx-auto"
     />
     {#each gcpCertifications as certification}
       <div class="shadow-container">
