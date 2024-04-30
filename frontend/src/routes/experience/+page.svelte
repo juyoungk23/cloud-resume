@@ -5,8 +5,9 @@
       date: "July 2023 - Present",
       company: "Wells Fargo, San Francisco, CA",
       responsibilities: [
-        "Developed a working connection between Python, Teradata, and Seismic to ingest financial data.",
-        "Used enterprise-level database technologies such as Teradata and Informatica.",
+        "Developed a working connection between Python, Teradata, and PrecisionLender to ingest financial data.",
+        "Used enterprise-level database technologies such as Teradata SQL and Informatica, along with UNIX and Agile Methodology.",
+        "San Francisco Wells Fargo Hackathon - 1st Place Winner for the project 'AI Voice Fraud Detection Service'.",
       ],
     },
     {
@@ -36,10 +37,10 @@
       description: [
         "A python program that takes your voice input and translates it into another language in real-time. (Python, Google Cloud Speech-to-Text API, Google Cloud Translate API, Eleven Labs API). ",
         "Can choose from 29 languages to translate to. Currently supports my voice and my friends' voices. ",
-        "Working on allowing users to clone their own voice, or use a different voice."
+        "Working on allowing users to clone their own voice, or use a different voice.",
       ],
       repo: "https://github.com/juyoungk23/liveVoiceTranslator",
-      demo: "https://thevoicetranslator.com/"
+      demo: "https://thevoicetranslator.com/",
     },
     {
       title: "3D Design Editor",
@@ -135,36 +136,32 @@
         {/each}
       </ul>
       <div class="flex items-center">
+        <!-- if project.demo is not empty string, link it -->
+        {#if project.demo}
+          <a
+            href={project.demo}
+            class="text-blue-500 underline hover:text-blue-700"
+            target="_blank">Demo Link</a
+          >
+        {/if}
+        {#if project.repo}
+          <div class="flex items-center">
+            <img
+              src="/github-logo.svg"
+              alt="GitHub Logo"
+              class="w-6 sm:w-8 h-6 sm:h-8 m-1 sm:m-2"
+            />
 
-<!-- if project.demo is not empty string, link it -->
-{#if project.demo}
-<a
-  href={project.demo}
-  class="text-blue-500 underline hover:text-blue-700"
-  target="_blank"
-  >Demo Link</a
->
-{/if}
-{#if project.repo}
-  <div class="flex items-center">
-    <img
-      src="/github-logo.svg"
-      alt="GitHub Logo"
-      class="w-6 sm:w-8 h-6 sm:h-8 m-1 sm:m-2"
-    />
-    
-    <a
-      href={project.repo}
-      class="text-blue-500 underline hover:text-blue-700"
-      target="_blank"
-    >
-      Repository Link
-    </a>
-  </div>
-{/if}
+            <a
+              href={project.repo}
+              class="text-blue-500 underline hover:text-blue-700"
+              target="_blank"
+            >
+              Repository Link
+            </a>
+          </div>
+        {/if}
       </div>
-
-      
     </div>
   {/each}
 </div>
