@@ -5,9 +5,8 @@
       date: "July 2023 - Present",
       company: "Wells Fargo, San Francisco, CA",
       responsibilities: [
-        "Created and maintained a working connection between Python, Teradata, and MongoDB.",
-        "Used enterprise-level databases technologies such as Teradata and Informatica.",
-        "Created Proof-Of-Concepts for Wells Fargo to use Seismic's FinTech services.",
+        "Developed a working connection between Python, Teradata, and Seismic to ingest financial data.",
+        "Used enterprise-level database technologies such as Teradata and Informatica.",
       ],
     },
     {
@@ -15,7 +14,7 @@
       date: "June 2022 – August 2022",
       company: "Wells Fargo, Charlotte, NC",
       responsibilities: [
-        "Developed a real-time dashboard and notification system for the developer team to monitor loan application statuses.",
+        "Developed a real-time health check dashboard and notification system for the dev team to monitor loan application statuses.",
         "Received a Shared Success Corporate Recognition for Learning and Growing from my team during the internship.",
       ],
     },
@@ -54,7 +53,7 @@
       title: "Daily Memory",
       date: "November 2023",
       description: [
-        "A program that displays a random photo each day from our family album (Google Photos API). Originally made as a birthday gift for my mother. Sends her a photo of our family once a day. (Python, Google Photos API, SendGrid API, GCP Cloud Scheduler, GCP Cloud Functions)",
+        "A program that displays a random photo each day from our family album (Google Photos API). Originally made as a birthday gift for my mother. Sends out a photo of our family once a day. (Python, Google Photos API, SendGrid API, GCP Cloud Scheduler, GCP Cloud Functions)",
       ],
       repo: "",
     },
@@ -62,7 +61,7 @@
       title: "Cloud Resume Challenge",
       date: "August 2023",
       description: [
-        "Hosting a personal resume website on GCP using Cloud Storage, Cloud Run, and Cloud Build. (GCP, Cloud Storage, Cloud Run, Cloud Build)",
+        "Hosting a personal resume website (this website!) on GCP using Cloud Storage, Cloud Run, and Cloud Build. (GCP, Cloud Storage, Cloud Run, Cloud Build)",
       ],
       repo: "https://github.com/juyoungk23/cloud-resume",
     },
@@ -72,7 +71,8 @@
       description: [
         "An on-the-go journal to jot down thoughts and goals. Designed for personal use, this journal is hosted on the cloud and periodically sends me emails, reminding me of past thoughts and showing how they change over time. It also performs word frequency analysis on goals and displays a barplot for viewing. (Cloud, Email Integration)",
       ],
-      repo: "https://github.com/juyoungk23/cloud-journal",
+      repo: "",
+      // repo: "https://github.com/juyoungk23/cloud-journal",
     },
     // {
     //   title: "Personal Home Assistant",
